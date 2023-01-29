@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment History
+    </title>
+    <link rel="stylesheet" href="/css/patient.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Appointment History</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th >DR.Name</th>
+            <th >Specialist</th>
+            <th>Time</th>
+            <th>Google Meet Link</th>
+            <th></th>
+        </tr></thead>
+        <%if(appoints.length!=0){%>
+        <%for(var i=0;i<appoints.length;i++){ %>
+             <tbody>
+            <tr> 
+                <td class="row-data borderstyle"> <span><%= appoints[i]. dappoint%></span></td>
+                <td class="row-data borderstyle"><span><%=appoints[i].dspecialist%></span></td>
+               <td class="row-data borderstyle">  <span><%= appoints[i].t%></span></td>
+               <td class="borderstyle">   <a href=<%=appoints[i].gapt%>>
+             
+                <i class="fa fa-video-camera">
+                  
+               </i></a></td>
+               <td><button onclick="show()">Cancel Appointment</button></td>
+              
+    
+             
+            </tr> </tbody> 
+        <% }%>
+        <% }%>
+    </table>
+    <!-- <style>
+        table {
+      border-spacing: 30px;
+    }
+    .table{
+        width: 100%;
+    }
+    th{
+        font-size: 1.5rem;
+        
+        border: 2px solid black;
+    }
+    td{
+        font-size: 1.5rem;
+      
+    }
+    td button{
+      height: 3rem;
+        border-radius: 4px;
+    }
+    td a{
+        color: black;
+    }
+    .borderstyle{
+        border: 2px solid black;
+    }
+    h1{
+        text-align: center;
+    }
+    
+        </style> -->
+        <script src="/js/script1.js"></script>
+</body>
+</html>

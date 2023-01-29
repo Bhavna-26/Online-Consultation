@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+ 
+    
+}
+
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/bg.png");
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+}
+.mainheader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainheader .logo img{
+    width: 250px;
+    height: 70px;
+    
+}
+.mainheader nav{
+    
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainheader nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .right-sec{
+    padding-right: 70px;
+}
+main .left-section{
+    padding-left: 100px;
+}
+.left-section h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: #242424;
+    margin-top: 100px;
+}
+.left-section h1{
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.left-section p{
+    margin-bottom: 20px;
+}
+/* about section */
+.abt-container{
+    background-color:#c9eaec6e;
+}
+.abt-container  .aim p{
+font-size: 30px;
+text-align: center;
+
+}
+
+.other{
+
+width: 100%;
+height: 45vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.other p{
+    font-size: 30px;
+}
+.other h1{
+font-size: 50px;
+}
+/* register section */
+.register{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+   margin-top: 22vh;
+ 
+}
+.box{
+
+    border-radius: 6px;
+    display: flex;
+    text-align: center;
+    background-color: #c9eaec6e;
+    box-shadow: 2px 2px 20px #5ec8d8;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+}
+#sneeze {
+    height: 340px;
+    width: 141px;
+}
+.sign button{
+    background-color:blue;
+    border-radius: 3px;
+    border-color: white;
+    color: white;
+    padding: 5px;
+    margin-top: 2vh;
+}
+/* contact section */
+.icon{
+    display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.contact{
+    background-color:#c9eaec6e;
+    margin-top: 10vh;
+}
+.contact h1{
+text-align: center;
+}
+.contact p{
+    text-align: center;
+}
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon a{
+    color: black;
+}

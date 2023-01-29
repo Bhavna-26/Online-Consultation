@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Doctor</title>
+    <link rel="stylesheet" href="/css/signIn.css">
+    <script src='https://kit.fontawesome.com/d2f6c864aa.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <section>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="/signInDoctor"method="post">
+                    <div class="inputBx">
+                   <span>Username</span>
+                   <input type="text"name="username"autocomplete="off">
+                    </div>
+                    <div class="inputBx">
+                        <span>Password</span>
+                        <input type="password"name="password"autocomplete="off">
+                         </div>
+                         <div class="inputBx">
+                            <!-- <a href="/doctor"> -->
+                            <input type="submit"value="Sign In">
+                        <!-- </a> -->
+                             </div>
+                             <div class="inputBx">
+                                <p>Don't have an account?
+                                    <a href="/signUpDoctor">Sign Up</a>
+                                </p>
+                             </div>
+                </form>
+                <!-- <h3>Or</h3>
+                <button class="signGG">
+                <div class="icon">
+                    <i class='fab fa-google' style='font-size:24px;color:#45ccff'></i>
+                </div>
+                    <div class="text">Sign In with Google</div>
+                </button> -->
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="https://cdn.pixabay.com/photo/2020/08/03/09/39/medical-5459630__340.png" alt="">
+        </div>
+
+    </section>
+</body>
+
+</html>

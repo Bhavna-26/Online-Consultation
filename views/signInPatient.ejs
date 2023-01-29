@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Patient</title>
+    <link rel="stylesheet" href="/css/signIn.css">
+    <script src='https://kit.fontawesome.com/d2f6c864aa.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <section>
+        <!-- <div class="imgBx">
+            <img src="https://media.istockphoto.com/id/1169998028/vector/sick-child-in-bed.jpg?s=612x612&w=0&k=20&c=ISxhTYHjDQB0sYs17KvJmZWdN1fKsmsG9qiTceWra5g=" alt="">
+        </div> -->
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="/signInPatient"method="post">
+                    <div class="inputBx">
+                   <span>Username</span>
+                   <input type="text"name="username"autocomplete="off">
+                    </div>
+                    <div class="inputBx">
+                        <span>Password</span>
+                        <input type="password"name="password"autocomplete="off">
+                         </div>
+                         <div class="inputBx">
+                           <!-- <a href="/patient">  -->
+                            <input type="submit"value="Sign In">
+                      <!-- </a> -->
+                             </div>
+                             <div class="inputBx">
+                                <p>Don't have an account?
+                                    <a href="/signUpPatient">Sign Up</a>
+                                </p>
+                             </div>
+                </form>
+                <!-- <h3>Or</h3> -->
+                <!-- <button class="signGG">
+                <div class="icon">
+                    <i class='fab fa-google' style='font-size:24px;color:#45ccff'></i>
+                </div>
+                    <div class="text">Sign In with Google</div>
+                </button> -->
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="https://media.istockphoto.com/id/1334047539/vector/female-patient-having-video-call-with-doctor-online-at-home-telemedicine-telehealth.jpg?s=612x612&w=0&k=20&c=kZ_C2phBqA8InHHE8NxOAy2ZSx1Xe5HP1xXmcE9Xy08=" alt="">
+        </div>
+
+    </section>
+    
+<style>
+    @media only screen and (max-width: 1504px) {
+    section .imgBx img {
+        
+        display: none;
+        
+    }
+    section .contentBx{
+        width: 100%;
+    }
+
+  }
+</style>
+</body>
+
+</html>

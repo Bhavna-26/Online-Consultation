@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="/css/patient.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Welcome Dr <%=drname%>
+        </h1>
+        <h2>Appointment List of patients</h2>
+        <!-- <div class="formcontainer">
+        <label for="#specialist">Specialist</label>
+        <input type="text"id="specialist"name="specialist">
+        <label for="#glink">Enter Your Google Meet Link</label>
+        <input type="text"id="glink"name="glink"></div>
+        <a href="#">Update Profile</a> -->
+        <table class="table">
+            <thead>
+        <tr>
+            <th>Patient Name</th>
+            <th>Google Meet Link</th>
+            <th>Time</th>
+        <th></th>
+        </thead>
+        </tr>
+        <%for(var i=0;i<pnames.length;i++){ %>
+              <tbody>
+            <tr> 
+                <td class="borderstyle row-data"> <span><%= pnames[i].pname%></span></td>
+                <td class="borderstyle row-data"><a href=<%=gmeetlink%>><i class="fa fa-video-camera">
+                    
+                </i></a></td>
+               <td class="borderstyle row-data">  <span><%= pnames[i].time%></span></td>
+              
+               <td><button onclick="show()">Cancel Appointment</button></td>
+             
+            </tr> </tbody>
+        <% }%>
+        </table>
+    </div>
+  <script src="/js/script2.js"></script>
+</body>
+</html>

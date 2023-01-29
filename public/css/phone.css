@@ -1,0 +1,77 @@
+/* to remove white spaces */
+html,body{
+    overflow-x: hidden;
+}
+/* header{
+    height: 150vh;
+} */
+.mainheader{
+    display: flex;
+flex-direction: column;
+}
+.mainheader nav{
+flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+main .left-section{
+    padding-left: 0; 
+}
+/* changing order of html elements */
+.left-section{
+   order: 2; 
+   
+   word-wrap: break-word; 
+   
+  text-align: center;
+}
+.right-sec{
+    order: 1;
+    padding-right: 0;
+  
+}
+.right-sec figure img{
+    height: 400px;
+    width: 400px
+}
+
+.left-section h2{
+ font-size: 15px;   
+}
+.left-section h1{
+    font-size: 40px;
+}
+/* .abt-container{
+    margin-top: 8vh;
+} */
+.other{
+    flex-direction: column;
+}
+.abt-container  .aim p{
+    font-size: 20px;
+}
+.other p{
+    font-size: 20px;
+}
+.other h1{
+font-size: 40px;
+}
+@media screen and (max-height:870px){
+   header{
+    height: 150vh;
+   }
+}
+.register{
+    flex-direction: column;
+}
+.con{
+    flex-direction: column;
+}
+@media screen and (max-width:1236px){
+   .abt-container{
+    height: 100vh;
+   } 
+}

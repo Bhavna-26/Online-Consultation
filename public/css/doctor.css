@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif
+    
+ 
+    
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:url("https://i.pinimg.com/originals/92/81/e8/9281e8e8a1d0db79fd7d88f0e85daad4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow:hidden;
+    opacity: 0.8;
+   
+}
+.container h1{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+.container h2{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+td button{
+    background-color: white;
+    color: blue;
+    padding: 5px;
+    margin:2%;
+ height: 40px;
+ border-radius: 4px;
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    color:blue;
+    font-weight: 800;
+    
+}
+.formcontainer input{
+  
+
+
+width: 80%;
+    border: none;
+}
+#specialist{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#glink{
+    margin-top: 10px;
+}
+.container a{
+    text-decoration: none;
+    
+}
+.table{
+    width: 100%;
+}
+th{
+    font-size: 1.5rem;
+    
+    border: 2px solid black;
+}
+td{
+    font-size: 1.5rem;
+  
+}
+td a{
+    color: black;
+}
+.borderstyle{
+    border: 2px solid black;
+}
