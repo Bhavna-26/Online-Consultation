@@ -137,14 +137,21 @@ app.post("/signInDoctor",function(req,res){
         username:req.body.username,
         password:req.body.password
     })
-    req.login(doctor,function(err){
-        if(err){console.log(err);}
-        else{
-            Doctor.authenticate("doctorLocal")(req,res,function(){
-                res.redirect("/doctor");
-            })
-        }
-    })
+    // req.login(doctor,function(err){
+    //     if(err){console.log(err);}
+    //     else{
+    //         Doctor.authenticate("doctorLocal")(req,res,function(){
+    //             res.redirect("/doctor");
+    //         })
+    //     }
+    // })
+    passport.authenticate("doctorLocal")(req,res,function(){
+        
+        req.login(doctor,function(err){
+            res.redirect("/doctor");
+        })
+
+})
 })
 
 //signInPatient route
@@ -171,14 +178,21 @@ app.get("/signInPatient",function(req,res){
         username:req.body.username,
         password:req.body.password
     })
-    req.login(p,function(err){
-        if(err){console.log(err);}
-        else{
-            NewPatient.authenticate("patientLocal")(req,res,function(){
-                console.log(req.session);
+    // req.login(p,function(err){
+    //     if(err){console.log(err);}
+    //     else{
+    //         NewPatient.authenticate("patientLocal")(req,res,function(){
+    //             console.log(req.session);
+    //             res.redirect("/patient");
+    //         })
+    //     }
+    // })
+    passport.authenticate("patientLocal")(req,res,function(){
+        
+            req.login(p,function(err){
                 res.redirect("/patient");
             })
-        }
+    
     })
 })
 // app.post("/signInPatient",function(req,res){
