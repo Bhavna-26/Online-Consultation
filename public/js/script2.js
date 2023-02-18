@@ -21,6 +21,7 @@ function show() {
   //this gives id of tr whose button was clicked
      var data = 
 document.getElementById(rowId).querySelectorAll(".row-data"); 
+
   /*returns array of all elements with 
   "row-data" class within the row with given id*/
   fetch("/deletePatient", {

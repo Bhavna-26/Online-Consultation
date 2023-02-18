@@ -382,7 +382,7 @@ app.post("/request", (req, res) => {
         else{
             res.redirect("/appointmentHistory")}
     })
-    Patient.deleteOne({pname:item},function(err){
+    Patient.deleteOne({pname:item,dname:req.body.dname},function(err){
         if(!err){
             console.log("deleted at doctors side")
         }
