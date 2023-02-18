@@ -304,6 +304,18 @@ app.get("/doctor",function(req,res){
         res.redirect("/signInDoctor");}
     
 })
+app.get("/logoutdoctor",function(req,res){
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/signInDoctor');
+      });
+})
+app.get("/logoutpatient",function(req,res){
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/signInPatient');
+      });
+})
 app.get("/request",function(req,res){
     //inserting array of patients in patients database
     Patient.find({},function(err,foundPatients){
