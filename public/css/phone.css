@@ -1,7 +1,10 @@
 /* to remove white spaces */
+*{
+    font-family: 'Baloo Bhai 2', cursive;
+}
 html,body{
     overflow-x: hidden;
-    font-family: 'Baloo Bhai 2', cursive;
+  
 }
 /* header{
     height: 150vh;
