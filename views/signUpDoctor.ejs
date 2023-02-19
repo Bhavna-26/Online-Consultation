@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,35 @@
     <title>Sign Up Doctor</title>
     <link rel="stylesheet" href="/css/signUp.css">
 </head>
+
 <body>
     <!-- main container -->
     <div class="container">
-<div class="form-wrap">
-    <h1>Signup Doctor</h1>
-    <div class="signup-box">
-    <div class="left-box">
-        <form action="/signUpDoctor"method="post">
-            <input type="text"placeholder="First Name"name="username"class="form-control"autocomplete="off">
-            <input type="text"placeholder="Last Name"class="form-control"autocomplete="off">
-            <input type="email"placeholder="Email"class="form-control"autocomplete="off">
-            <input type="password"placeholder="Password"class="form-control"name="password"autocomplete="off">
-            <input type="password"placeholder="Confirm Password"class="form-control"autocomplete="off">
-            <input type="text"placeholder="Specialist"name="specialist"class="form-control"autocomplete="off">
-            <input type="text"placeholder="Google meet link"name="glink"class="form-control"autocomplete="off">
-            <!-- <a href="/signInDoctor">   -->
-                <input type="submit"value="Sign Up Now">
-            <!-- </a> -->
-        </form>
+        <div class="form-wrap">
+            <h1>Signup Doctor</h1>
+            <div class="signup-box">
+                <div class="left-box">
+                    <form action="/signUpDoctor" method="post" id="form">
+                        <input type="text" placeholder="First Name" name="username" class="form-control">
+                        <input type="text" placeholder="Last Name" class="form-control">
+                        <input type="email" placeholder="Email" class="form-control">
+                        <input type="password" placeholder="Password" class="form-control" name="password">
+                        <input type="password" placeholder="Confirm Password" class="form-control">
+                        <input type="text" placeholder="Specialist" name="specialist" class="form-control">
+                        <input type="text" placeholder="Google meet link" name="glink" class="form-control">
+                        <!-- <a href="/signInDoctor">   -->
+                        <input type="submit" value="Sign Up Now">
+                        <!-- </a> -->
+                    </form>
+                </div>
+                <div class="right-box">
+                    <img src="https://media.istockphoto.com/id/1129223269/vector/doctor-with-stethoscope-and-medical-test-medic-icon-in-flat-style-health-care-services.jpg?s=612x612&w=0&k=20&c=-xVOhzfvA10gs2roVXJQkOocUVjtogG0Ci9UXdYieoA="
+                        alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="right-box">
-        <img src="https://media.istockphoto.com/id/1129223269/vector/doctor-with-stethoscope-and-medical-test-medic-icon-in-flat-style-health-care-services.jpg?s=612x612&w=0&k=20&c=-xVOhzfvA10gs2roVXJQkOocUVjtogG0Ci9UXdYieoA=" alt="">
-    </div></div>
-</div>
-    </div>
-    <script>
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-      var e=document.querySelectorAll(".form-control");
-      for(var i=0;i<e.length;i++){
-        console.log(e[i])
-    e[i].setAttribute("autocomplete","on")
-    }
-  } 
-}
 
-var x = window.matchMedia("(max-width: 768px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
-    </script>
 </body>
+
 </html>

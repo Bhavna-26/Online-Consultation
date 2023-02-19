@@ -15,11 +15,11 @@
     <div class="signup-box">
     <div class="left-box">
         <form action="/signUpPatient"method="post">
-            <input type="text"placeholder="First Name"name="username"class="form-control"autocomplete="off">
-            <input type="text"placeholder="Last Name"class="form-control"autocomplete="off">
-            <input type="email"placeholder="Email"class="form-control"autocomplete="off">
-            <input type="password"placeholder="Password"class="form-control"name="password"autocomplete="off">
-            <input type="password"placeholder="Confirm Password"class="form-control"autocomplete="off">
+            <input type="text"placeholder="First Name"name="username"class="form-control">
+            <input type="text"placeholder="Last Name"class="form-control">
+            <input type="email"placeholder="Email"class="form-control">
+            <input type="password"placeholder="Password"class="form-control"name="password">
+            <input type="password"placeholder="Confirm Password"class="form-control">
             <!-- <a href="/signInPatient">  -->
                 <input type="submit"value="Sign Up Now">
             <!-- </a> -->
@@ -30,19 +30,6 @@
     </div></div>
 </div>
     </div>
-    <script>
-        function myFunction(x) {
-  if (x.matches) { // If media query matches
-      var e=document.querySelectorAll(".form-control");
-      for(var i=0;i<e.length;i++){
-        console.log(e[i])
-    e[i].setAttribute("autocomplete","on")
-    }
-  } 
-}
-var x = window.matchMedia("(max-width: 768px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
-    </script>
+ 
 </body>
 </html>

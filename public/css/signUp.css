@@ -53,7 +53,8 @@
     outline: none;
     border: 1px solid #273746;
     font-size: 1rem;
-    border-radius: 0.4px;
+    /* border-radius: 0.4px; */
+    border-radius: 30px;
 }
 .left-box input[type="submit"]{
     text-decoration: none;
@@ -65,7 +66,8 @@
     text-align: center;
     width: 90%;
     transition: all 0.5s;
-    border-radius: 0.3px;
+    /* border-radius: 0.3px; */
+    border-radius: 30px;
 }
 .left-box a:hover{
     background: #6c63ff;
@@ -75,5 +77,8 @@
 @media(max-width:768px) {
     .signup-box{
         flex-direction: column;
+    }
+    .container{
+        background: none;
     }
 }
