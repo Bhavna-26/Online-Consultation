@@ -21,11 +21,11 @@
                 <form action="/signInPatient"method="post">
                     <div class="inputBx">
                    <span>Username</span>
-                   <input type="text"name="username"autocomplete="off">
+                   <input type="text"name="username"autocomplete="off"class="it">
                     </div>
                     <div class="inputBx">
                         <span>Password</span>
-                        <input type="password"name="password"autocomplete="off">
+                        <input type="password"name="password"autocomplete="off"class="it">
                          </div>
                          <div class="inputBx">
                            <!-- <a href="/patient">  -->
@@ -66,6 +66,20 @@
 
   }
 </style>
+<script>
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+      var e=document.querySelectorAll(".it");
+      for(var i=0;i<e.length;i++){
+        console.log(e[i])
+    e[i].setAttribute("autocomplete","on")
+    }
+  } 
+}
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
 </body>
 
 </html>

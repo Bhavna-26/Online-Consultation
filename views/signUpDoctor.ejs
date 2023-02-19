@@ -32,5 +32,20 @@
     </div></div>
 </div>
     </div>
+    <script>
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+      var e=document.querySelectorAll(".form-control");
+      for(var i=0;i<e.length;i++){
+        console.log(e[i])
+    e[i].setAttribute("autocomplete","on")
+    }
+  } 
+}
+
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+    </script>
 </body>
 </html>
