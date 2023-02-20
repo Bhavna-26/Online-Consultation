@@ -75,10 +75,16 @@
     transition: 0.5s;
 }
 @media(max-width:768px) {
+    html,body{
+        overflow-x: hidden;
+    }
     .signup-box{
         flex-direction: column;
     }
     .container{
         background: none;
+    }
+    .right-box{
+        display: none;
     }
 }

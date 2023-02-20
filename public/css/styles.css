@@ -161,11 +161,13 @@ text-align: center;
 }
 .mobile-nav-icon[name="close-outline"]{
 display: none;
+color: #212529;
 }
 .mobile-nav-icon{
     width: 3rem;
     height: 3rem;
-    color: #212529;
+    /* color: #212529; */
+    color: blue;
   
    
 }

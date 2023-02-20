@@ -127,6 +127,9 @@ app.get("/",function(_req,res){
 app.get("/signInDoctor",function(_req,res){
     res.render("signInDoctor");
 })
+app.get("/failure",function(req,res){
+    res.render("failure");
+})
 // app.post("/signInDoctor",function(req,res){
 //     item1=req.body.username; //doctor who signed in
 //     res.redirect("/doctor");
@@ -145,11 +148,12 @@ app.post("/signInDoctor",function(req,res){
     //         })
     //     }
     // })
-    passport.authenticate("doctorLocal")(req,res,function(){
+    passport.authenticate("doctorLocal",{failureRedirect: '/failure'})(req,res,function(){
         
         req.login(doctor,function(err){
-            res.redirect("/doctor");
-        })
+     
+            res.redirect("/doctor");}
+        )
 
 })
 })
@@ -187,7 +191,7 @@ app.get("/signInPatient",function(req,res){
     //         })
     //     }
     // })
-    passport.authenticate("patientLocal")(req,res,function(){
+    passport.authenticate("patientLocal",{failureRedirect: '/failure'})(req,res,function(){
         
             req.login(p,function(err){
                 res.redirect("/patient");
@@ -285,7 +289,8 @@ app.get("/signUpPatient",function (req, res) {
     //landing page route for doctor
 app.get("/doctor",function(req,res){
     //console.log(req.user);
-    console.log(req.session);
+  
+
     if(req.isAuthenticated()){
     //finding google meet link of the doctor who signed in
 
