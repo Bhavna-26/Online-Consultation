@@ -33,7 +33,7 @@ header
     
     width: 450px;
     display: flex;
-    justify-content: space-around;
+justify-content: space-around;
     align-items: center;
 }
 .mainheader nav a{
@@ -153,15 +153,19 @@ text-align: center;
 .icon a{
     color: black;
 }
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
     cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
+    font-size: 2rem;
+}
+.mobile-nav-icon[name="close-outline"]{
+display: none;
+}
+.mobile-nav-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #212529;
+  
+   
+}

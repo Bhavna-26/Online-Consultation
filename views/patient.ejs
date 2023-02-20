@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="stylesheet" href="/css/patient.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <h1>WELCOME <%=pname%></h1>
-    <a href="/logoutpatient">Log out</a>
-<a href="/appointmentHistory"><h2>
-    View your Appointment History</h2></a>
-    <div >
-    <table class="table">
-        <thead>
-        <tr>
-        <th >DR.Name</th>
-        <th >Specialist</th>
-        <th >Slots</th>
-        <th></th>
-       </tr> 
-    </thead>
+    <div class="logout">
+        <a href="/logoutpatient">
+            <i class="fa fa-close mobile-nav-icon" name="close-outline"></i>
+        </a>
+    </div>
+    <h1>WELCOME <%=pname%>
+    </h1>
+
+    <a href="/appointmentHistory">
+        <h2>
+            View your Appointment History</h2>
+    </a>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>DR.Name</th>
+                    <th>Specialist</th>
+                    <th>Slots</th>
+                    <th></th>
+                </tr>
+            </thead>
             <%for(var i=0;i<dNames.length;i++){ %>
-              <tbody>
-               <tr> 
-                   <td class="row-data borderstyle"> <span><%= dNames[i].username%></span></td>
-                  <td class="row-data borderstyle">  <span><%= dNames[i].specialist%></span></td>
-                  <td class="row-data borderstyle">  <form >
-                        <input type="radio"id="time1"name="timings"onchange="selectedTime(event)"value="12:00PM">
-                        <label for="time1">12:00PM</label>
-                        <input type="radio"id="time2"name="timings"onchange="selectedTime(event)"value="12:15PM">
-                        <label for="time2">12:15PM</label>
-                        <input type="radio"id="time3"name="timings"onchange="selectedTime(event)"value="12:30PM">
-                        <label for="time1">12:30PM</label>
-                        <input type="radio"id="time4"name="timings"onchange="selectedTime(event)"value="12:45PM">
-                        <label for="time1">12:45PM</label>
-                    </form></td>
-        
-                <td><button onclick="show()">BOOK FOR APPOINTMENT</button></td>
-               </tr> </tbody>
-           <% }%>
-        
-    </table>
-   </div>
- <!-- <style>
+                <tbody>
+                    <tr>
+                        <td class="row-data borderstyle"> <span>
+                                <%= dNames[i].username%>
+                            </span></td>
+                        <td class="row-data borderstyle"> <span>
+                                <%= dNames[i].specialist%>
+                            </span></td>
+                        <td class="row-data borderstyle">
+                            <form>
+                                <input type="radio" id="time1" name="timings" onchange="selectedTime(event)"
+                                    value="12:00PM">
+                                <label for="time1">12:00PM</label>
+                                <input type="radio" id="time2" name="timings" onchange="selectedTime(event)"
+                                    value="12:15PM">
+                                <label for="time2">12:15PM</label>
+                                <input type="radio" id="time3" name="timings" onchange="selectedTime(event)"
+                                    value="12:30PM">
+                                <label for="time1">12:30PM</label>
+                                <input type="radio" id="time4" name="timings" onchange="selectedTime(event)"
+                                    value="12:45PM">
+                                <label for="time1">12:45PM</label>
+                            </form>
+                        </td>
+
+                        <td><button onclick="show()">BOOK FOR APPOINTMENT</button></td>
+                    </tr>
+                </tbody>
+                <% }%>
+
+        </table>
+    </div>
+    <!-- <style>
     table {
   border-spacing: 30px;
 }
@@ -77,7 +99,8 @@ td button{
     text-decoration: none;
 }
     </style> -->
-    
+
     <script src="/js/script.js"></script>
 </body>
+
 </html>

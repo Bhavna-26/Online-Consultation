@@ -52,3 +52,11 @@ h2{
     text-align: center;
 color: #1E90FF;
 }
+.logout{
+
+position: fixed;
+right: 1rem;
+}
+.logout .mobile-nav-icon{
+    font-size: 2rem;
+}
